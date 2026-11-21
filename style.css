@@ -1,0 +1,341 @@
+:root {
+    --bleu-roi: #1F3C9E;
+    --bleu-nuit: #14235A;
+    --blanc: #FFFFFF;
+    --orange: #F4A340;
+    --jaune-patte: #FFD166;
+    --bleu-clair: #EAF0FF;
+    --vert: #B7D98B;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: var(--bleu-clair);
+    color: var(--bleu-nuit);
+}
+
+h1, h2, h3 {
+    font-family: "Times New Roman", serif;
+}
+
+p {
+    color: var(--bleu-nuit);
+}
+
+header {
+    background-color: var(--bleu-roi);
+    color: var(--blanc);
+    padding: 10px;
+    text-align: center;
+}
+
+.entete-identite {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 16px;
+}
+
+.entete-identite .logo {
+    width: 80px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.entete-texte {
+    text-align: left;
+}
+
+header .site-titre {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+header .telephone {
+    margin: 0;
+    color: var(--blanc);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: var(--blanc);
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    background-color: var(--bleu-nuit);
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 25px 20px;
+}
+
+main section {
+    padding: 20px;
+}
+
+.accueil-badge {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 36px 24px;
+}
+
+.accueil-texte h1 {
+    margin-top: 0;
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+
+.accueil-texte p {
+    font-size: 1.3rem;
+}
+
+.accueil-image {
+    position: relative;
+}
+
+.accueil-image .camionnette {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.accueil-image .badge {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 190px;
+    height: 190px;
+    margin: 0;
+}
+
+.titre-faq,
+.titre-prestations {
+    color: var(--orange);
+    text-align: center;
+}
+
+.titre-faq {
+    font-size: 30px;
+}
+
+.titre-prestations {
+    font-size: 40px;
+}
+
+.prestations-note {
+    margin: 0 0 12px;
+    color: var(--bleu-nuit);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.badge {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 20px auto;
+}
+
+.bouton-telephone {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: var(--orange);
+    color: var(--bleu-nuit);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.bouton-telephone:hover {
+    background-color: var(--jaune-patte);
+}
+
+.accueil-texte .bouton-telephone {
+    margin: 20px 0 0;
+    padding: 20px 36px;
+    font-size: 1.35rem;
+}
+
+.note-reservation {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.prestations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.prestations-grid > div {
+    padding: 24px;
+    background-color: var(--blanc);
+    border: 2px solid var(--bleu-roi);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.prestations-grid img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.contenu-page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.badge-page {
+    text-align: center;
+}
+
+
+
+.sous-titre {
+    color: var(--orange);
+}
+
+.presentation{
+    margin-bottom: 20px;
+    padding: 24px;
+    background-color: var(--blanc);
+    border-radius: 12px;
+}
+
+.points-forts {
+    margin: 20px 0;
+    padding: 24px 24px 24px 44px;
+    background-color: var(--blanc);
+    border-radius: 12px;
+}
+
+main a {
+    color: var(--bleu-roi);
+}
+
+a[href^="tel:"],
+a[href="mentions.html"],
+a[href="mentions-legales.html"] {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px 24px;
+    background-color: var(--bleu-roi);
+    color: var(--blanc);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--blanc);
+    margin: 0;
+}
+
+footer a {
+    color: var(--blanc);
+}
+
+@media (max-width: 600px) {
+    .accueil-badge {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .accueil-texte h1 {
+        font-size: 2.2rem;
+    }
+
+    .accueil-texte p {
+        font-size: 1.2rem;
+    }
+
+    .accueil-image .badge {
+        top: -10px;
+        right: -10px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .accueil-texte .bouton-telephone {
+        padding: 16px 26px;
+        font-size: 1.2rem;
+    }
+
+    .prestations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header .site-titre {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    nav a {
+        width: auto;
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .titre-prestations {
+        font-size: 30px;
+    }
+
+    .bouton-telephone {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}
+
